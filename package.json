@@ -1,0 +1,44 @@
+{
+  "name": "info",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --devtool eval-source-map --progress  --colors --hot",
+    "watch": "cross-env NODE_ENV=development webpack -w --colors --config webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack  --colors --config webpack.config.js",
+    "publish": "cross-env NODE_ENV=production webpack -p  --colors --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "better-picker": "^1.1.3",
+    "cross-env": "^5.1.3",
+    "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "handlebars": "^4.0.6",
+    "handlebars-loader": "^1.4.0",
+    "lodash": "^4.17.4",
+    "node-sass": "^4.5.2",
+    "postcss-loader": "^1.3.3",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "uglifyjs-webpack-plugin": "^0.4.3",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "id-validator": "^1.3.0",
+    "underscore": "^1.8.3"
+  }
+}

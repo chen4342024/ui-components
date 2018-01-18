@@ -1,0 +1,101 @@
+body > .picker {
+    * {
+        font-size: 14px;
+    }
+    z-index: 1000;
+    .picker-panel {
+        width: 316px;
+        height: 316px;
+        border-radius: 8px;
+        overflow: hidden;
+        left: 50%;
+        top: 50%;
+        margin-left: -158px;
+        margin-top: -158px;
+        transition: all 0.3s;
+        opacity: 0;
+        //transform: scale3d(.6, .6, .6);
+        //transform: scale3d(.6, .6, .6);
+        transform: scale3d(1, 1, 1);
+
+        &.picker-show {
+            opacity: 1;
+            transform: scale3d(1, 1, 1);
+        }
+
+        .picker-choose {
+            height: 50px;
+            line-height: 50px;
+
+            position: relative;
+            .picker-title {
+                background: #fff;
+                height: 50px;
+                line-height: 50px;
+            }
+            .cancel,
+            .confirm {
+                padding: 0;
+                top: 0;
+                color: #254FCB;
+            }
+            .cancel {
+                left: 15px;
+            }
+            .confirm {
+                right: 15px;
+            }
+            &:after {
+                content: ' ';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background: #dde0e6;
+                transform: scaleY(0.5);
+            }
+        }
+        .picker-content {
+            margin-top: 45px;
+            overflow: hidden;
+            .mask-top,
+            .mask-bottom {
+                height: 68px;
+                transform: translateZ(0);
+                &:after {
+                    border: none;
+                    height: 1px;
+                    background: #ccc;
+                }
+            }
+        }
+        .wheel-wrapper {
+            padding: 0 10px;
+            .wheel {
+                height: 172px;
+                overflow: hidden;
+                .wheel-scroll {
+                    margin-top: 68px;
+                    line-height: 36px;
+                    .wheel-item {
+                        height: 36px;
+                        transform: rotateX(0) !important
+                    }
+                }
+            }
+        }
+    }
+    .picker-footer {
+        height: 20px
+    }
+    .picker-mask {
+        transition: all 0.3s;
+        background: rgba(0, 0, 0, 0);
+        opacity: 0;
+        &.picker-show {
+            background: rgba(0, 0, 0, .6);
+            opacity: 1;
+        }
+    }
+}

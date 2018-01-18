@@ -1,0 +1,82 @@
+body > .picker {
+  z-index: 1000; }
+  body > .picker * {
+    font-size: 14px; }
+  body > .picker .picker-panel {
+    width: 316px;
+    height: 316px;
+    border-radius: 8px;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    margin-left: -158px;
+    margin-top: -158px;
+    transition: all 0.3s;
+    opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1); }
+    body > .picker .picker-panel.picker-show {
+      opacity: 1;
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1); }
+    body > .picker .picker-panel .picker-choose {
+      height: 50px;
+      line-height: 50px;
+      position: relative; }
+      body > .picker .picker-panel .picker-choose .picker-title {
+        background: #fff;
+        height: 50px;
+        line-height: 50px; }
+      body > .picker .picker-panel .picker-choose .cancel,
+      body > .picker .picker-panel .picker-choose .confirm {
+        padding: 0;
+        top: 0;
+        color: #254FCB; }
+      body > .picker .picker-panel .picker-choose .cancel {
+        left: 15px; }
+      body > .picker .picker-panel .picker-choose .confirm {
+        right: 15px; }
+      body > .picker .picker-panel .picker-choose:after {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: #dde0e6;
+        -webkit-transform: scaleY(0.5);
+                transform: scaleY(0.5); }
+    body > .picker .picker-panel .picker-content {
+      margin-top: 45px;
+      overflow: hidden; }
+      body > .picker .picker-panel .picker-content .mask-top,
+      body > .picker .picker-panel .picker-content .mask-bottom {
+        height: 68px;
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0); }
+        body > .picker .picker-panel .picker-content .mask-top:after,
+        body > .picker .picker-panel .picker-content .mask-bottom:after {
+          border: none;
+          height: 1px;
+          background: #ccc; }
+    body > .picker .picker-panel .wheel-wrapper {
+      padding: 0 10px; }
+      body > .picker .picker-panel .wheel-wrapper .wheel {
+        height: 172px;
+        overflow: hidden; }
+        body > .picker .picker-panel .wheel-wrapper .wheel .wheel-scroll {
+          margin-top: 68px;
+          line-height: 36px; }
+          body > .picker .picker-panel .wheel-wrapper .wheel .wheel-scroll .wheel-item {
+            height: 36px;
+            -webkit-transform: rotateX(0) !important;
+                    transform: rotateX(0) !important; }
+  body > .picker .picker-footer {
+    height: 20px; }
+  body > .picker .picker-mask {
+    transition: all 0.3s;
+    background: transparent;
+    opacity: 0; }
+    body > .picker .picker-mask.picker-show {
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 1; }

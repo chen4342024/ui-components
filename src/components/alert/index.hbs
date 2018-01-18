@@ -1,0 +1,27 @@
+<div>
+    <div class="custom-alert in custom-type-{{type}}">
+        <div class="custom-alert-content {{titleClassName}} {{contentClassName}}">
+            {{#each titleALL}}
+            <p class="custom-alert-title">{{this}}</p>
+                {{/each}}
+            {{#each tips}}
+                <p class="custom-alert-msg {{../isHide}}">{{this}}</p>
+            {{/each}}
+
+            {{#if appendHtml}}
+            <div class="custom-alert-html">
+                {{{appendHtml}}}
+            </div>
+            {{/if}}
+        </div>
+        <div class="custom-alert-btn-group">
+            {{#if showCancel}}
+                <a href="javascript:void(0)" class="custom-alert-btn custom-alert-cancel">{{cancelText}}</a>
+            {{/if}}
+            <a href="javascript:void(0)" class="custom-alert-btn custom-alert-ok">{{okText}}</a>
+        </div>
+    </div>
+    <div class="custom-alert-mask">
+    </div>
+</div>
+

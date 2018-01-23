@@ -1,0 +1,44 @@
+h3 {
+    font-size: 0.34rem;
+    margin: 0.3rem 0;
+}
+
+.content {
+    padding: 15px;
+}
+
+.panel {
+
+}
+
+.btn {
+    background: #ffffff;
+    border: 1px solid #508ef0;
+    border-radius: 0.08rem;
+    width: 100%;
+    height: 0.70rem;
+    line-height: 0.70rem;
+    font-size: 0.28rem;
+    color: #508ef0;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0.15rem;
+
+    &:active {
+        background: #508ef0;
+        color: #fff;
+    }
+
+}
+
+input {
+    border: 1px solid #dde0e6;
+    width: 100%;
+    height: .8rem;
+    padding-left: .2rem;
+    box-sizing: border-box;
+    font-size: .28rem;
+    color: #333333;
+}
+
